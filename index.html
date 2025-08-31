@@ -2,19 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to Ripsual</title>
+  <title>Welcome to My Site</title>
   <style>
+    /* Reset & basic setup */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: black;
-      color: #eaeaea;
+      background: #000; /* pure black */
+      color: #eee; /* off-white text */
+      font-family: 'Courier New', Courier, monospace;
       height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       overflow: hidden;
-      position: relative;
     }
 
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #bbb;
+    }
+
+    /* Subtle fog effect */
     .fog {
       position: absolute;
       top: 0;
@@ -24,7 +39,7 @@
       background: url('https://i.ibb.co/5Msf8Jm/fog.png') repeat;
       background-size: cover;
       animation: drift 60s linear infinite;
-      opacity: 0.2;
+      opacity: 0.1;
       pointer-events: none;
     }
 
@@ -32,24 +47,11 @@
       from {transform: translateX(0);}
       to {transform: translateX(-50%);}
     }
-
-    h1 {
-      margin-top: 20%;
-      font-size: 3.5em;
-      color: #a020f0;
-      text-shadow: 0 0 20px rgba(160,32,240,0.7);
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-top: 20px;
-      color: #ccc;
-    }
   </style>
 </head>
 <body>
   <div class="fog"></div>
-  <h1>🪦 Welcome to ripsualx.github.io</h1>
-  <p>Dark. Mysterious. Eternal.</p>
+  <h1>Welcome to my site...</h1>
+  <p>This site has no meaning, but you're a skid</p>
 </body>
 </html>
